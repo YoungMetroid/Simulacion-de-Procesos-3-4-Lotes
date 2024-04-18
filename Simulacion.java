@@ -494,7 +494,9 @@ public class Simulacion extends JFrame implements ActionListener, Runnable {
 		
 			cuartaTabla.setValues();
 			if(!mainTable.isEmpty())
-			mainTable.remove(0);
+			{
+			    mainTable.remove(0);
+			}
 			
 			segundaTabla.deleteOneProcess();
 			segundaTabla.clearTable();
@@ -545,7 +547,9 @@ public class Simulacion extends JFrame implements ActionListener, Runnable {
 						//mainTable.remove(0);
 					}
 					else
-					updateTable(mainTable.size()-1);
+					{
+					    updateTable(mainTable.size()-1);
+					}
 					
 					segundaTabla.setBlocked(false);
 					segundaTabla.running = true;
